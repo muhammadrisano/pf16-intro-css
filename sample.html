@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nilai specificity */
+
+        /* 10 +  1 = 11*/
+        /* .card-head h1{
+            color: red;
+            font-size: 46px;
+        } */
+        /* 10 + 10 = 20 */
+        /* .card-head .title{
+            color: blue;
+            text-align: center;
+        } */
+        /* berapa specificity =  112 (zaki) */
+        /* 100 + 1 + 10 + 1 = 112 */
+        /* #hero div.container h2{
+            color: yellow;
+        } */
+
+
+        /* 1 hitunglah nilai specificity dari */
+        /* wisnu =  4 (10) + 1 (100) + 1 (1) = 141*/
+        /* zuyyina = 141 */
+        /*  guntur = 141*/
+
+        /* 100 + 10 + 10 + 10 + 1 + 10 = 141 */
+        #hero .container .wrapper-card .card p.description{
+            color: orangered;
+        }
+        /* 2.hitunglah nilai specificity dari */
+        /* wisnu =  */
+        /* zuyyina = 63 */
+        /* guntur = 63 */
+        /* 10 + 1 + 10 + 1 + 10 + 10 + 10+ 1 + 10  = 63*/
+        .container div.items div.wrapper-card .card .card-body p.description{
+            color: blue;
+        }
+        /* 3 maka properti css yg diterapkan pada p adalah (warna) */
+        /* wisnu =  */
+        /* zuyyina = orangered */
+        /* guntur = orangered */
+
+        /* 4 hitunglah nilai specificity dari */
+        /* wisnu = 22 */
+        /* fauzi = 31 */
+        /* dita = 22 */
+        /* 10 + 1 + 10 +  1 = 22*/
+        .card div.card-body [href="/card"]{
+            color: yellow;
+            text-decoration: none;
+        }
+        .card-body a{
+            color: red !important;
+        }
+
+        /* 5 manakan warna yg diterapkan pada element a */
+        /* merah atau kuning */
+        /* wisnu = red*/
+        /* fauzi = red */
+        /* dita = red */
+
+        .card .title{
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <div class="container">
+            <div class="items">
+                <h2>helo world</h2>
+                <div class="wrapper-card">
+                    <div class="card">
+                        <div class="title">
+                            helo world
+                        </div>
+                        <div class="card-head">
+                            <h1 class="title">Indomie Ayam Bawang</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, saepe. Fuga, nisi illum!
+                            </p>
+                            <a href="/card">add to card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item"> </div>
+        </div>
+    </section>
+    
+</body>
+</html>
