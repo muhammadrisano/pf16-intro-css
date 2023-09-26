@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            /* width: 100vw; */
+            height: 100vh;
+            border: 2px solid black;
+            position: relative;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            box-sizing: border-box;
+            /* justify-content: flex-end; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+           
+            /* justify-content: center; */
+            /* flex-start, flex-end, space between, space around, space-evenly,   */
+            /* align-items: baseline; */
+            /* stretch, flex-start, flex-end */
+            flex-wrap: wrap;
+            /* jika item lebih dari 1 baris */
+            /*align-content */
+            /* align-content: flex-start; */
+            /* gap: 20px; */
+            /* row-gap: 20px;
+            column-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box; */
+            /* flex-direction: column; */
+        }
+        .box{
+            
+            height: 400px;
+            width: 400px;
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto; */
+            /* margin: auto; */
+            border: 1px solid blue;
+            /* margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            margin-left: 20px; */
+            /* flex-grow: 1; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+           
+        }
+        /* .box:hover{
+            transform: skewX(200deg);
+        } */
+        .satu{
+            /* flex: 1; */
+            order: 3;
+            align-self: center;
+            /* justify-self: center; */
+            /* margin-top: auto;
+            margin-bottom: auto; */
+        }
+        .dua{
+            /* flex: 1; */
+            order: 1;
+            
+        }
+        .tiga{
+            /* flex: 1; */
+            order: 2;
+        }
+        h1{
+            background-color: red;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1> belajar flexbox</h1>
+
+    <div class="container">
+        
+        <div class="box tiga">3</div>
+        <!-- <div class="box satu">1</div>
+        <div class="box dua">2</div> -->
+        <!-- <div class="box">4</div>
+            
+        <div class="box">5</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        
+        <div class="box">2</div>
+        <div class="box">3</div> -->
+        <!-- <div class="box">3</div> -->
+      
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, repellendus. Quasi consequatur itaque inventore assumenda voluptatem quod reiciendis a blanditiis, nesciunt ipsam cum. Consectetur nulla facilis ut eveniet sit dolorem.</p>
+</body>
+</html>
