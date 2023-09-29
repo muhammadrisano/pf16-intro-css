@@ -1,0 +1,54 @@
+/* focus ke mobile */
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    color: blue;
+    font-size: 28px;
+}
+.container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+}
+
+/* table */
+
+@media screen and (min-width: 576px) {
+    
+    .title{
+        font-size: 42px;
+    }
+    .container{
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: lightpink;
+        
+    }
+    
+    .container p{
+        font-size: 20px;
+    }
+}
+
+
+/* destop */
+
+@media screen and (min-width: 770px) {
+    .container{
+        width: 950px;
+        background-color: lightcyan;
+    }
+    .container p{
+        font-size: 16px;
+    }
+}
